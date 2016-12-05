@@ -751,3 +751,80 @@ Author URI: http://www.imsam.com
             margin-top: 100px;
         }
     }
+
+.md-open .container-blur {
+filter: grayscale(0.5) blur(10px);
+opacity: 0.3;
+}
+
+.search-bottun:hover {
+    -webkit-box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.2) ;
+box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.2) ;
+}
+
+
+
+.tcon-visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+  .tcon-visuallyhidden:active, .tcon-visuallyhidden:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto; }
+
+@-webkit-keyframes chevron-pulse {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes chevron-pulse {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+.tcon-svgchevron {
+    -webkit-transform: rotate(180deg);
+    width: 18px;
+    position: relative;
+    top: 29px;
+    right: -38px;
+}
+
+.tcon-svgchevron path {
+  -webkit-animation: chevron-pulse 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: chevron-pulse 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
+  stroke: black;
+  stroke-width: 1px; }
+
+.tcon-svgchevron path.a1 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s; }
+
+.tcon-svgchevron path.a2 {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s; }
+
+.tcon-svgchevron path.a3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s; }

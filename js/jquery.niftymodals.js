@@ -153,7 +153,7 @@
         scrollbarWidth = helpers.measureScrollbar();
       },
       setScrollbar: function() {
-        var bodyPad = parseInt((body.css('padding-right') || 0), 10);
+        var bodyPad = parseInt((body.css('padding-right') || 0), 0);
         originalBodyPad = document.body.style.paddingRight || '';
         if (bodyIsOverflowing){
           body.css('padding-right', bodyPad + scrollbarWidth);
@@ -233,7 +233,7 @@
 
 /**
  * Self execute to support previous versions with 'md-trigger' class & data-modal attribute
- */
+ **/
 
 $('.md-trigger').on('click',function(){
   var modal = $(this).data('modal');
