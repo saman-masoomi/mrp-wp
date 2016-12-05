@@ -54,6 +54,7 @@
                     <?php endif; ?>
                 </ul>
             </section>
+            <a href="#"><p class="more-news">بیشتر</p></a>
         </div>
     </div>
     
