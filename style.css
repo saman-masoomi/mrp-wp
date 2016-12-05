@@ -1,0 +1,753 @@
+/*
+Theme Name: MRP
+Theme URI: http://www.mrp24.com
+Description: Mandegar One View One Click
+Version: 1.0.0
+Author: Saman Masoomi
+Author URI: http://www.imsam.com
+*/
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    @font-face {
+        font-family: yekan;
+        src: url(fonts/Yekan.ttf);
+    }
+    
+    @font-face {
+        font-family: sans;
+        src: url(fonts/Iraniansans.ttf);
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .logo-container {
+        margin-top: 3%;
+    }
+    
+    #mrp {
+        display: inline-block;
+        width: 200px;
+        height: 250px;
+        background: url("images/mrp-logo-3.png") no-repeat;
+    }
+    
+    #mrp.play {
+        -moz-animation: fade-in 3s 1s steps(21) forwards;
+        -o-animation: fade-in 3s 1s steps(21) forwards;
+        -webkit-animation: fade-in 3s 1s steps(21) forwards;
+        animation: fade-in 3s 1s steps(21) forwards;
+    }
+    
+    @-webkit-keyframes fade-in {
+        to {
+            background-position: 0 -5250px;
+        }
+    }
+    
+    @-moz-keyframes fade-in {
+        to {
+            background-position: 0 -5250px;
+        }
+    }
+    
+    @keyframes fade-in {
+        to {
+            background-position: 0 -5250px;
+        }
+    }
+    
+    .icons-container {
+        margin-top: 40px;
+        height: 100%;
+    }
+    
+    .container .icons img {
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    
+    .container p {
+        width: 100%;
+        text-align: center;
+        font-family: tahoma;
+        font-size: 13px;
+        color: #414141;
+    }
+    
+    .search-container {
+        font-family: sans;
+        font-size: 15px;
+        width: 100%;
+        height: 473px;
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .search-container input.search {
+        height: 35px;
+        margin-bottom: 20px;
+    }
+    
+    .search-container thead tr th {
+        min-width: 120px;
+        height: 40px;
+        border: solid 1px #eee;
+        text-align: center;
+        font-family: sans;
+        font-size: 13px;
+        font-weight: bold;
+        background-color: #8cc0c9;
+    }
+    
+    .search-container td {
+        padding: 10px;
+        border: solid 1px #eee;
+        font-family: sans;
+        font-size: 13px;
+        min-width: 35px;
+    }
+    
+    .search-container tbody tr:hover {
+        background-color: #eee;
+    }
+    
+    .search-container tbody tr td.name,
+    td.phone {
+        min-width: 130px;
+    }
+    
+    .search-container tbody tr td.mail {
+        min-width: 230px;
+        text-align: left;
+        font-family: tahoma;
+        font-size: 14px;
+    }
+    
+    .search-container .glyphicon-search {
+        position: relative;
+        left: 30px;
+        top: 3px;
+        color: #a4a4a4;
+    }
+    
+    .search-container tbody tr td.phone,
+    td.mobile {
+        width: 115px;
+        text-align: center;
+        font-family: "b nazanin";
+        font-size: 16px;
+    }
+    
+    .search-container input {
+        border: solid 1px #ccc;
+        border-radius: 5px;
+        width: 310px;
+    }
+    
+    .search-container input:focus {
+        outline: none;
+        border-color: #aaa;
+        width: 310px;
+    }
+    
+    .footer {
+        width: 100%;
+        height: 100px;
+        position: relative;
+    }
+    
+    .footer .copyright {
+        position: absolute;
+        bottom: 0;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .container .icons {
+            width: 120px;
+            height: auto;
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+        .container .icons {
+            width: 15%;
+            height: auto;
+        }
+    }
+    
+    @media screen and (min-width: 997px) {
+        .container .icons {
+            width: 10%;
+            height: auto;
+        }
+    }
+    
+    @media screen and (min-width: 1170px) {
+        .container .icons {
+            max-width: 150px;
+            height: auto;
+        }
+    }
+    /*----------------------------------------------------------------*/
+    
+    .index-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        height: calc(100% + 200px);
+    }
+    
+    .google-search {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .google-search .search-input {
+        font-family: "b nazanin";
+        border: 1px solid #e1e1e1;
+        min-width: 584px;
+        max-width: 584px;
+        height: 38px;
+        z-index: 6;
+        left: 0px;
+        outline: medium none;
+    }
+    
+    form table tr:nth-child(2) {
+        margin-top: 27px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .google-search .search-bottun {
+        background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
+        -moz-border-radius: 2px;
+        -moz-user-select: none;
+        background-color: #f2f2f2;
+        border: 1px solid #f2f2f2;
+        border-radius: 2px;
+        color: #757575;
+        cursor: default;
+        font-family: arial, sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        min-width: 54px;
+        padding: 0 16px;
+        text-align: center;
+        height: 33px;
+        outline: medium none;
+        margin-left: 10px;
+    }
+    
+    .social {
+        position: absolute;
+        left: 30px;
+        top: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .social img {
+        width: 35px;
+        height: 35px;
+        margin-left: -3px;
+    }
+    
+    .header-logo {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 53px;
+    }
+    
+    .header-logo .menu-grid {
+        width: 16px;
+        height: 16px;
+        background-image: url(images/grid.png);
+        opacity: .85;
+        margin-left: 20px;
+    }
+    
+    .header-logo .menu-grid:hover {
+        cursor: pointer;
+    }
+    
+    .header-logo .email-link p {
+        font-family: arial, sans-serif;
+        font-size: 13px;
+        color: #000;
+        opacity: .85;
+    }
+    
+    .header-logo .mandegar-logo img {
+        width: 32px;
+        height: 32px;
+        margin-top: -7px;
+        margin-left: 15px;
+    }
+    
+    .icons-container-pop {
+        width: 320px;
+        height: 250px;
+        margin-top: 35px;
+        display: flex;
+        flex: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        border: 1px solid #ccc;
+        border-color: rgba(0, 0, 0, .2);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+        position: absolute;
+        right: 60px;
+        top: 20px;
+        background-color: #fff;
+        z-index: 9999;
+    }
+    
+    .icons-fade {
+        display: none;
+    }
+    
+    .icons-container-pop .arrow-bottom {
+        width: 0px;
+        height: 0px;
+        border-color: transparent;
+        border-style: dashed dashed solid;
+        border-width: 0 8.5px 8.5px;
+        border-bottom-color: rgba(0, 0, 0, .1);
+        position: absolute;
+        right: 40px;
+        top: -8px;
+    }
+    
+    .icons-container-pop .arrow-top {
+        width: 0px;
+        height: 0px;
+        border-color: transparent;
+        border-style: dashed dashed solid;
+        border-width: 0 8.5px 8.5px;
+        border-bottom-color: #fff;
+        position: absolute;
+        right: 40px;
+        top: -7px;
+    }
+    
+    .icons-container-pop .icons1 {
+        width: 86px;
+        height: 98px;
+    }
+    
+    .icons-container-pop .icons1:nth-child(n+6) {
+        margin-top: -20px;
+        margin-right: 7px;
+    }
+    
+    .icons-container-pop .icons1 img {
+        width: 54px;
+        height: 54px;
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    
+    .icons-container-pop p {
+        width: 100%;
+        text-align: center;
+        font-family: tahoma;
+        font-size: 13px;
+        color: #414141;
+    }
+    
+    form table td {
+        font-family: "b nazanin";
+        font-size: 17px;
+        color: gray;
+        text-align: center;
+    }
+    
+    footer {
+        width: 100%;
+        height: 40px;
+        background: #f2f2f2;
+        border-top: 1px solid #e4e4e4;
+        line-height: 40px;
+        position: fixed;
+        bottom: 0;
+        direction: ltr;
+    }
+    
+    footer ul.footer-sites {
+        float: left;
+    }
+    
+    footer ul.footer-sites li {
+        display: inline-block;
+        margin-left: 20px;
+        font-family: arial, sans-serif;
+        color: #666;
+        font-size: small;
+    }
+    
+    footer ul.copyright {
+        float: right;
+        color: #666;
+    }
+    
+    footer ul.copyright li {
+        list-style-type: none;
+        margin-right: 20px;
+        font-family: arial, sans-serif;
+        font-size: small;
+    }
+    
+    footer ul.copyright li span {
+        color: #8e8e8e;
+    }
+    
+    @media screen and (min-width:768px) {
+        .news-box {
+            max-width: 600px;
+            height: 300px;
+            margin: 0 auto;
+            margin-top: 40px;
+            font-family: "b yekan";
+            border: 1px solid #dadbdc;
+            border-radius: 3px;
+        }
+        .news-box ul li {
+            width: 100%;
+            list-style-type: none;
+            font-family: "b nazanin";
+            padding-top: 10px;
+            margin-right: 25px;
+        }
+        .news-box ul li:first-child {
+            padding-top: 15px;
+        }
+        .news-box ul li figure img {
+            width: 60px;
+            height: 45px;
+            float: right;
+            margin-left: 15px;
+        }
+        .news-box ul li figure .news-title {
+            font-size: 13px;
+            color: #424242;
+        }
+        .news-box ul li figure .news-time {
+            float: right;
+            margin: -6px 0 0 24px;
+            color: #575757;
+        }
+        .news-box ul li figure .news-source {
+            margin-top: -6px;
+            color: #575757;
+        }
+    }
+    
+    @media screen and (min-width:480px) {
+        .news-box {
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 40px;
+            border: 1px solid #dadbdc;
+            border-radius: 3px;
+            margin-bottom: 100px;
+        }
+        .news-box ul li {
+            width: 90%;
+            list-style-type: none;
+            font-family: "b yekan";
+            padding-top: 10px;
+            margin-right: 25px;
+        }
+        .news-box ul li:first-child {
+            padding-top: 15px;
+        }
+        .news-box ul li figure img {
+            width: 55px;
+            height: 45px;
+            float: right;
+            margin-left: 15px;
+        }
+        .news-box ul li figure .news-title {
+            font-size: 13px;
+            color: #424242;
+        }
+        .news-box ul li figure .news-time {
+            float: right;
+            margin: 0px 0 0 24px;
+            color: #575757;
+            font-size: 11px;
+        }
+        .news-box ul li figure .news-source {
+            margin-top: 0px;
+            color: #575757;
+            font-size: 11px;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        .header-logo .email-link p {
+            visibility: hidden;
+        }
+        .icons-container-pop {
+            width: 320px;
+            height: 250px;
+            margin-top: 35px;
+            display: flex;
+            flex: none;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: stretch;
+            border: 1px solid #ccc;
+            border-color: rgba(0, 0, 0, .2);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+            position: absolute;
+            right: 60px;
+            top: 20px;
+            background-color: #fff;
+        }
+        .news-box {
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 40px;
+            background: rgba(243, 242, 242, 1);
+            background: -moz-linear-gradient(top, rgba(243, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(243, 242, 242, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+            background: -webkit-linear-gradient(top, rgba(243, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            background: -o-linear-gradient(top, rgba(243, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            background: -ms-linear-gradient(top, rgba(243, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            background: linear-gradient(to bottom, rgba(243, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+        .news-box ul li {
+            width: 100%;
+            list-style-type: none;
+            font-family: "b nazanin";
+            padding-top: 10px;
+        }
+        .news-box ul li:first-child {
+            padding-top: 15px;
+        }
+        .news-box ul li figure img {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .news-box ul li figure .news-title {
+            font-size: 17px;
+            color: #424242;
+            margin: 10px 10px 6px 0;
+            font-family: "b yekan";
+            padding-top: 3px;
+        }
+        .news-box ul li figure .news-time {
+            float: right;
+            margin: -3px 10px 0 24px;
+            color: #575757;
+            font-family: "b yekan";
+            font-size: 13px;
+        }
+        .news-box ul li figure .news-source {
+            margin-top: 0px;
+            color: #575757;
+            font-size: 13px;
+            font-family: "b yekan";
+        }
+        .news-box ul li:last-child {
+            padding-bottom: 30px;
+        }
+        .google-search .search-input {
+            font-family: "b nazanin";
+            border: 1px solid #e1e1e1;
+            width: 50%;
+            max-width: 70%;
+            height: 38px;
+            z-index: 6;
+            left: 0px;
+            outline: medium none;
+        }
+    }
+    /*==========================================================================================*/
+    /*==========================================================================================*/
+    /*==========================================================================================*/
+    /*==================================== News Page Styles ====================================*/
+    /*==========================================================================================*/
+    /*==========================================================================================*/
+    /*==========================================================================================*/
+    
+    @media screen and (min-width:768px) {
+        .news-container {
+            width: 85%;
+            height: auto;
+            margin-bottom: 100px;
+        }
+        .news-container .news-content {
+            width: 100%;
+            height: auto;
+            margin-top: 50px;
+        }
+        .news-container .news-content .news-details {
+            width: 590px;
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+        }
+        .news-container .news-content .news-details .news-details-top {
+            width: auto;
+            margin-left: 15px;
+            font-family: yekan;
+            font-size: 16px;
+        }
+        .news-container .news-content .news-details .news-details-top img {
+            width: 25px;
+            height: 25px;
+            margin-left: 5px;
+        }
+        .news-container .news-content .news-thumbnail {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .news-container .news-content .news-thumbnail img {
+            width: 592px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .news-container .news-content .news-org-content {
+            width: 590px;
+            height: auto;
+            margin: 0 auto;
+        }
+        .news-container .news-content .news-org-content h1 {
+            width: 100%;
+            height: 30px;
+            font-family: yekan;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .news-container .news-content .news-org-content p {
+            width: 100%;
+            height: auto;
+            font-family: yekan;
+            font-size: 16px;
+            text-align: right;
+            text-align: justify;
+            line-height: 23px;
+        }
+        .news-container .news-content .news-org-content p img {
+            display: block;
+            margin: 0 auto;
+        }
+        .news-container .news-content .news-content-like {
+            width: 100px;
+            height: 30px;
+            float: left;
+            margin: 40px 0 0 200px;
+        }
+        .news-container .news-content .news-content-comment {
+            width: 50%;
+            height: auto;
+            margin-top: 200px;
+        }
+    }
+    
+    @media screen and (max-width:768px) {
+        .news-container {
+            width: 90%;
+            height: auto;
+            margin-bottom: 100px;
+        }
+        .news-container .news-content {
+            width: 100%;
+            height: auto;
+            margin-top: 50px;
+        }
+        .news-container .news-content .news-details {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+        }
+        .news-container .news-content .news-details .news-details-top {
+            width: auto;
+            margin-left: 15px;
+            font-family: yekan;
+            font-size: 16px;
+        }
+        .news-container .news-content .news-details .news-details-top img {
+            width: 25px;
+            height: 25px;
+            margin-left: 5px;
+        }
+        .news-container .news-content .news-thumbnail {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .news-container .news-content .news-thumbnail img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .news-container .news-content .news-org-content {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .news-container .news-content .news-org-content h1 {
+            width: 100%;
+            height: auto;
+            font-family: yekan;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .news-container .news-content .news-org-content p {
+            width: 100%;
+            height: auto;
+            font-family: yekan;
+            font-size: 16px;
+            text-align: right;
+            text-align: justify;
+            line-height: 23px;
+        }
+        .news-container .news-content .news-org-content p img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .news-container .news-content .news-content-like {
+            width: 100px;
+            height: 30px;
+            float: left;
+            margin: 40px 0 0 0;
+        }
+        .news-container .news-content .news-content-comment {
+            width: 50%;
+            height: auto;
+            margin-top: 100px;
+        }
+    }
