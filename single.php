@@ -20,46 +20,31 @@
 	            <h1 class="news-content-title"><?php the_title();?></h1>
 	            <p class="news-content-content">
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          
-          
-			<?php the_content("خواندن ادامه مطلب"); ?>
+			<?php the_content(); ?>
 			<?php wp_link_pages(); ?>
 		  </div>
-          <p><a href="<?php echo get_comments_link(); ?>" class="obg"><?php comments_number( '0', '1', '%' ); ?> دیدگاه</a></p>
-        </div>
-		
-		<?php
-			if (is_singular() && comments_open() )
-			{
-				comments_template();
-			}
-		?>
-		
-<?php endwhile; ?>
-<?php else : ?>
-		<div class="article">
-			<p>
-				مطلبی پیدا نشد!
-			</p>
-		</div>
-<?php endif; ?>
-     
-                                     
-                    
-           
+        </div>     
 	            </p>
 	        </div>
 	        
 	        <div class="news-content-like">
 	            like
 	        </div>
-	        
-	        <div class="news-content-comment">
-	            comment
+	        <p class="comment-list-title">نظرات</p>
+	        <div class="comment-line"></div>
+	        <div class="news-content-comment">   
+                <?php comments_template(); ?>
 	        </div>
-	    </div>
-	    
+	    </div>    
+	   
 	</div>
-	
+	<?php endwhile; ?>
+    <?php else : ?>
+		<div class="article">
+			<p>
+				مطلبی پیدا نشد!
+			</p>
+		</div>
+<?php endif; ?>
 	
 <?php get_footer(); ?>
