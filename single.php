@@ -28,7 +28,7 @@
 	        </div>
 	        
 	        <div class="news-content-like">
-	            like
+	            like                     
 	        </div>
 	        <p class="comment-list-title">نظرات</p>
 	        <div class="comment-line"></div>
@@ -46,5 +46,4 @@
 			</p>
 		</div>
 <?php endif; ?>
-	
 <?php get_footer(); ?>
