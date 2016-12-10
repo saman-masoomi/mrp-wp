@@ -53,11 +53,9 @@
                     <?php endwhile; ?>
                     <?php endif; ?>
                 </ul>
-            </section>c
+            </section>
             <a href="#"><p class="more-news">بیشتر</p></a>
         </div>
     </div>
     
 <?php get_footer(); ?>
-
-

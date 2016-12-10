@@ -930,6 +930,82 @@ footer ul.copyright li span {
         margin: 0 auto;
     }
     
+/*    ******* Start Category Page *******  */
+    
+    .category-container {
+        width: 590px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+    
+    .category-container h1 {
+        font-family: "b yekan";
+        font-size: 20px;
+        width: 100%;
+        border-bottom: 2px solid rgb(174, 172, 172);
+        padding-bottom: 15px;
+        color:#8A8C91;
+    }
+    
+    .category-container .container-news {
+        width: 100%;
+        height: auto;
+    }
+    
+    .category-container .container-news ul li {
+        width: 100%;
+        height: 90px;
+        list-style-type: none;
+        border-bottom: 1px solid #D8D8D8;
+        margin-top: 10px;
+    }
+    
+    .category-container .container-news ul li figure img {
+        width: 100px;
+        height: 75px;
+        float: right;
+        margin-left: 20px;
+    }
+    
+    .category-container .container-news ul li figure figcaption p.category-news-title {
+        width: 80%;
+        text-align: right;
+        font-family: "b yekan";
+        font-size: 13px;
+        color:#868686;
+        padding-top: 10px;
+    }
+    
+    .category-container .container-news ul li figure figcaption p.category-news-date {
+        width: 50%;
+        text-align: right;
+        font-family: "b yekan";
+        font-size: 13px;
+        color:#868686;
+        margin-top: 10px;
+        float: right;
+    }
+    
+    .category-container .container-news ul li figure figcaption p.category-news-time {
+        width: 100px;
+        margin-right: 160px;
+        text-align: right;
+        font-family: "b yekan";
+        font-size: 13px;
+        color:#868686;
+        float: right;
+        margin-right: 250px;
+        margin-top: -30px;
+    }
+    
+    .pagination>li>a, .pagination>li>span {
+        border-radius: 50% !important;
+        margin: 0 5px;
+    }
+    
+    /*   ******* End Category Page  ******* */
+    
 }
 
 
