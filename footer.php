@@ -28,7 +28,7 @@
                                     </thead>
                                     <tbody class="list">
                                         <tr>
-                                            <td class="name">سعید یاوری</td>
+                                            <td class="name"><?php echo get_field($unit); ?></td>
                                             <td class="unit">مدیریت</td>
                                             <td class="phone">801-802</td>
                                             <td class="mobile">09122006090</td>

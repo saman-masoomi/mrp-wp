@@ -19,13 +19,13 @@
             </table>
         </form>
     </div>
-    
-        
-        
+   
     <div class="row">
         <div class="news-box">
            <section>
                 <ul>
+                 <?php 
+                  $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>0)); ?>
                    <?php if(have_posts()) : ?> <?php while(have_posts()) : the_post(); ?>
                     <li>
                         <figure> <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' ); if ($image) : ?> <img src="<?php echo $image[0]; ?>" alt="" /> <?php endif; ?>
@@ -54,7 +54,7 @@
                     <?php endif; ?>
                 </ul>
             </section>
-            <a href="#"><p class="more-news">بیشتر</p></a>
+            <a href="/archive"><p class="more-news">بیشتر</p></a>
         </div>
     </div>
     

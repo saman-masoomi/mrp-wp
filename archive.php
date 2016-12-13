@@ -2,7 +2,8 @@
 /*
 Template Name: Archive
 */
- get_header(); ?>	
+?>
+<?php get_header(); ?>	
 	<div class="container">
         <div class="category-container">
             <h1><?php wp_title('', true,''); ?></h1>
@@ -11,9 +12,9 @@ Template Name: Archive
                <section>
                    <?php 
                     $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>5)); ?>
-                    <?php if (have_posts() ) : ?>
+                    <?php if ( $wpb_all_query->have_posts() ) : ?>
                     <ul>
-                        <?php while (have_posts() ) : the_post(); ?>
+                        <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
                             <li>
                                 <figure>
                                     <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' ); if ($image) : ?> <img src="<?php echo $image[0]; ?>" alt="" /> <?php endif; ?>
@@ -26,7 +27,6 @@ Template Name: Archive
                             </li>
                         <?php endwhile; ?>              
                     </ul>
-                     <?php if ( function_exists( 'pgntn_display_pagination' ) ) pgntn_display_pagination( 'posts' );?>
                     <?php wp_reset_postdata(); ?>
                         <?php else : ?>
                             <p><?php _e( 'متاسفانه هیچ مطلبی یافت نشد.' ); ?></p>
@@ -35,4 +35,4 @@ Template Name: Archive
             </div>
         </div>
     </div>  
-<?php get_footer(); ?>   
+<?php get_footer(); ?>                        

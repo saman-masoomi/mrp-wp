@@ -26,10 +26,7 @@
         </div>     
 	            </p>
 	        </div>
-	        
-	        <div class="news-content-like">
-	            like                     
-	        </div>
+
 	        <p class="comment-list-title">نظرات</p>
 	        <div class="comment-line"></div>
 	        <div class="news-content-comment">   
