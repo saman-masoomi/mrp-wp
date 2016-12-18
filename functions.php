@@ -29,7 +29,7 @@ add_action( 'init', 'create_post_type' );
 
                 array(
                     'id'   => 'name',
-                    'name' => __( 'Name', 'textdomain' ),
+                    'name' => __( 'name', 'textdomain' ),
                     'desc'  => 'Format: First Last',
                     'type' => 'text',
 

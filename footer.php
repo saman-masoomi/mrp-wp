@@ -31,7 +31,7 @@
                         <ul>
                             <li>
                                 <tr>
-                                    <td class="name"></td>
+                                    <td class="name"> </td>
                                     <td class="unit">مدیریت</td>
                                     <td class="phone"></td>
                                     <td class="mobile">09122006090</td>
@@ -74,10 +74,9 @@
             });
         });
         
-function phonebook() {
- $("#modal-1").niftyModal();       
-    }
-
+        function phonebook() {
+         $("#modal-1").niftyModal();       
+            }
 
     </script>
     <?php wp_footer(); ?>
