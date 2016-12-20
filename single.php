@@ -5,7 +5,7 @@
         <div class="news-details">
           
            <?php if ( have_posts() ) : ?>
-<?php while ( have_posts() ) : the_post(); ?>
+            <?php while ( have_posts() ) : the_post(); ?>
            
             <div class="news-date news-details-top"><img src="<?php bloginfo('template_url'); ?>/images/Calendar.png" alt="News Date"><?php the_time('d M Y'); ?> </div>
             <div class="news-time news-details-top"><img src="<?php bloginfo('template_url'); ?>/images/Watch.png" alt="News Time">10:27</div>

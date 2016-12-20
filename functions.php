@@ -17,6 +17,7 @@ add_action( 'init', 'create_post_type' );
             );
 }
 
+
     global $meta_boxes;
     $meta_boxes   = array();
     $prefix = 'rw_';
@@ -53,5 +54,4 @@ function YOURPREFIX_register_meta_boxes() {
 }
 add_action( 'admin_init', 'YOURPREFIX_register_meta_boxes' );
     
-
 ?>

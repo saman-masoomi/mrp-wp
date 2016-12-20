@@ -487,11 +487,11 @@ footer ul.copyright li span {
     .news-box ul li figure .news-time {
         float: right;
         margin: -6px 0 0 24px;
-        color: #A1A1A1;
+        color: #575757;
     }
     .news-box ul li figure .news-source {
         margin-top: -6px;
-        color: #A1A1A1;;
+        color: #575757;
     }
     .news-box .more-news {
         width: 100px;
@@ -539,12 +539,12 @@ footer ul.copyright li span {
     .news-box ul li figure .news-time {
         float: right;
         margin: 0px 0 0 24px;
-        color: #A1A1A1;
+        color: #575757;
         font-size: 11px;
     }
     .news-box ul li figure .news-source {
         margin-top: 0px;
-        color: #A1A1A1;;
+        color: #575757;
         font-size: 11px;
     }
 }
@@ -608,13 +608,13 @@ footer ul.copyright li span {
     .news-box ul li figure .news-time {
         float: right;
         margin: -3px 10px 0 24px;
-        color: #A1A1A1;
+        color: #575757;
         font-family: "b yekan";
         font-size: 13px;
     }
     .news-box ul li figure .news-source {
         margin-top: 0px;
-        color: #A1A1A1;;
+        color: #575757;
         font-size: 13px;
         font-family: "b yekan";
     }
